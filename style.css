@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: 16px "helvetica", Arial, sans-serif;
+    background-color: #333;
+    color: #fff;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+a:hover{
+    color: rgb(120, 105, 187);
+}
+h1{
+    font-size: 30px;
+}
+h2{
+    margin: 20px 0px 20px 0px;
+}
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+}
+.menu{
+        /* background-color: #fff; */
+    /* width: 143%; */
+    display: flex;
+    transition: all .2s;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 20px;
+}
+ul li{
+    margin: 5px 0px 0 85px;
+}
+
+section{ 
+    display: flex;
+    justify-content: center;
+}
+
+.title{
+    margin: 10px 25px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title-text{
+    margin: 20px 0px 20px 0px;
+}
+p{
+    margin-bottom: 10px;
+    line-height: 1.5em;
+    text-align: justify;
+}
+P:last-child{
+    margin-bottom: 0px;
+}
+
+h1{
+    margin-bottom: 10px;
+    line-height: 1.5em;
+    text-align: justify;
+}
+h1:last-child{
+    margin-bottom: 0px;
+}
+
+
+
+.content{
+    width: 80%;
+    margin-top: 100px;
+    padding-bottom: 50px;
+}
+
+.glob-one{
+    display: flex;
+    align-items: center;
+}
+
+.glob-info, .glob-img{
+    width: 60%;
+}
+
+
+.image{
+    width: 500px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+.text-column-2{
+    margin-left: 30px;
+}
+
+.glob-two{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.glob-example-img{
+    width: 60%;
+}
+
+.glob-example{
+    width: 60%;
+    margin-left: 70px;
+}
+
+.glob-tre{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.glob-tre-img{
+    width: 60%;
+}
+
+.glob-tre-text{
+    width: 60%;
+    margin-left: 70px;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    background-color: rgb(255, 255, 255, 0.9);
+}
+.contact{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.contact a{
+    transition: all .3s;
+    margin: 10px 20px 10px 20px;
+}
+
+.contact a:hover{
+    transform: scale(1.1);
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-term p{
+    text-align: center;
+    color: #333;
+}
+.copy{
+    color: rgba(95, 94, 94, 0.801) !important;
+}
