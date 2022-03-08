@@ -22,7 +22,7 @@
             </nav>
         </div>
     </header>
-    <section>
+    <section class="group">
         <div class="content">
             <div class="glob-one">
                 <div class="glob-info">
@@ -103,6 +103,56 @@
         </div>
         
     </section>
+    <div class="back">
+        <section class="group">
+            <div class="all">
+                <div>
+                    <h1>Envie sua menssgem</h1>
+                    <p>Preencha todos os campos abaixo:</p>
+                    <br>
+                </div>
+                <form>
+                    <fieldset class="grupo">
+                        <div class="campo">
+                            <label for="nome">Nome</label>
+                            <input type="text" name="nome" id="nome" required>
+                        </div>
+                        <div class="campo">
+                            <label for="sobrenome">Sobrenome</label>
+                            <input type="text" name="sobrenome" id="nome" required>
+                        </div>
+                    </fieldset>
+
+                    <div class="campo">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+
+                    <div class="campo">
+                        <label>Qual seu gênero:</label>
+                        <label>
+                            <input type="radio" name="genero" id="masculino" value="masculino" checked>Masculino
+                        </label>
+                        <label>
+                            <input type="radio" name="genero" id="masculino" value="feminino">Feminino
+                        </label>
+                        <label>
+                            <input type="radio" name="genero" id="noption" value="noption">Prefiro não dizer
+                        </label>
+                    </div>
+
+                    <div class="campo">
+                        <br>
+                        <label><strong>Qual a sua menssagem:</strong></label>
+                        <textarea row="6" style="width: 26em;" id="message" name="message" required></textarea>
+                    </div>
+
+                    <button class="botao" type="submit" onclick="teste2()">Concluido</button>
+
+                </form>
+            </div>
+        </section>
+    </div>
     <footer id="contact-id">
         <div class="two">
             <div class="center">
@@ -111,6 +161,7 @@
                     <a href="https://www.instagram.com/_felipeduran/" target="_blank"><img src="img/instagram.svg"></a>
                     <a href="https://www.linkedin.com/in/felipe-duran-maciel-3a96a8164" target="_blank"><img src="img/linkedIn.svg"></a>
                     <a href="https://github.com/FelipeDuranl" target="_blank"><img src="img/github.svg"></a>
+                    <a class="email" onclick="teste()"><img src="img/email.svg"></a>
 
                 </div>
             </div>
@@ -148,7 +199,31 @@
                     scrollTop: targetOffset - 100
                 }, 500);
             });
+
         });
+
+        function teste(){
+            var teste = $(".back");
+            teste.css("display", "block");
+
+            setTimeout(() => {
+                teste.css("opacity", "1");
+            }, 1000);
+
+        }
+        function teste2(){
+            var teste2 = $(".back");
+
+            if(!required){
+                teste.css("opacity", "1");
+                teste.css("display", "block");
+            }else{
+                teste2.css("opacity", "0");
+                teste2.css("display", "none");
+
+            }
+
+        }
     </script>
 </body>
 </html>
